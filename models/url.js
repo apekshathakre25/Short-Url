@@ -15,7 +15,6 @@ const urlSchema = new mongoose.Schema(
       {
         timestamp: {
           type: Number,
-          default: Date.now,
         },
       },
     ],
@@ -23,5 +22,5 @@ const urlSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Url = mongoose.model("Url", urlSchema);
-module.exports = Url;
+const URL = mongoose.model("Url", urlSchema);
+module.exports = URL;
